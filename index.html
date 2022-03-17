@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technolofy Assignment 2</title>
+</head>
+<body>
+    <form onsubmit="formValidation()" action="" name="myform" method="post">
+        <input type="text" name="name">
+        <input type="password" name="password" id="">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function formValidation() {
+         
+        let x = document.forms["myform"]["name"].value;
+let y =document.forms["myform"]["password"].value;
+        if(x==""){
+            alert("Name Cannot be blank")
+            return false
+        }
+        else if(y.length<6){
+            alert("Password cannot be less then 6 character")
+            return false
+        }
+        }
+    </script>
+</body>
+</html>
